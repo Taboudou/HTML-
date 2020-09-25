@@ -3,8 +3,8 @@ body {
 	background:white;
     margin:0;
 	padding:0;
-	display:block;
 	
+     
 
 	
 }
@@ -19,69 +19,102 @@ header{
 }
 
 
-header h1 {
+header, footer p {
 	color:white;
 	text-align:center;
 	font-size:2em;
 	font-weight: verdana ;
+	font-style:oblique;
 }
-
-nav p{
+nav , footer{
 	background-color:#2874a6;
-	text-align:center;
-	margin:0px 0px 0px 0px;
+}
+nav a{
+	margin:0px 10px 0px 50px;
+	color:black;
+	position:relative;
+	left:30%;
+	text-decoration:none;
 }
 
 section{
 	margin:50px 20px 20px 30px;
     border: 0px solid grey;
-	padding:50px;
-	width:30%;
-	background-color:#B1B7B7;
+	padding:20px;
+	width:40%;
+    background-color:aliceblue;
 	
 }
+
 section p {
 	text-align:left;
 	font-weight:bold;
 	font-size:2em;
 	font-style:italic;
-	text-decoration:underline;
 	text-transform:capitalize;
 	line-height:200%;
-	
+	word-spacing:1em;
 }
 
 aside{
-    margin:-298px 0px 0px 0px;
+    margin:-654px 0px 0px 0px;
 	float:right;
 	width:15%;
-
 	background-color:#27E8E8;
+	text-align:center;
+	font-style:hervana;
 }
 
 footer {
 	
 	position:absolute;
+	top:150%;
     bottom:0;
 	height:10%;
-	width:99%;
+	width:100%;
 	padding:5px;
-	background-color:#2874a6;
 	
 }
 
 footer p {
-	text-align:center;
+	
 	font-size:14px;
-	color:white;
+	
 
 }
 
-p {
-	text-align:center;
-	font-style:hervana;
+
+
+
+section h1,h2,h3{
+	font-size:1em;
 }
-.citation{
-	text-align:center;
-	font-style:italic;
+
+section h1{
+   position:relative;
+   top:40px;
+}
+
+section h2{
+	position:relative;
+	left:30%;
+	top:10px
+}
+
+section h3{
+	position:relative;
+	left:60%;
+	top:-25px;
+}
+
+.photo{
+	height:80px;
+	position:absolute;
+	left:35%;
+	top:250px;
+}
+
+h1{
+	margin:5px;
+	padding:5px;
 }
