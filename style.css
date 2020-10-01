@@ -231,3 +231,16 @@ li {
 	position:relative;
 	left:2%;
 }
+/*Photo entête en bas*/	
+#photo{
+	position:relative;
+	left:49%;
+	top:10px;
+}
+/*Scrollbar*/
+::-webkit-scrollbar{
+	width:15px;
+}
+::-webkit-scrollbar-thumb{
+	background:red;
+}
