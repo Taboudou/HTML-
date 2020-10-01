@@ -4,6 +4,7 @@ body {
     margin:0;
 	padding:0;	
 }
+/*en-tête titre et bas en-tête*/
 header{
 	
 	border: 2px solid #2874a6;
@@ -18,6 +19,8 @@ header, footer p {
 	font-weight: verdana ;
 	font-style:oblique;
 }
+
+/*Menu*/
 nav , footer{
 	background-color:#2874a6;
 }
@@ -25,9 +28,11 @@ nav a{
 	margin:0px 10px 0px 50px;
 	color:black;
 	position:relative;
-	left:30%;
+	left:35%;
 	text-decoration:none;
 }
+
+/*Prenom Nom adresse etc*/
 section{
 	margin:50px 20px 20px 30px;
     border: 0px solid grey;
@@ -44,34 +49,6 @@ section p {
 	text-transform:capitalize;
 	line-height:200%;
 	word-spacing:1em;
-}
-aside{
-    margin:-1470px 0px 0px 0px;
-	float:right;
-	width:15%;
-	height:250px;
-	background-color:#d7e1ec;
-	text-align:center;
-	font-style:hervana;
-}
-aside p{
-	text-align:left;
-}
-
-footer {
-	
-	position:absolute;
-	top:200%;
-    bottom:0;
-	height:10%;
-	width:99%;
-	padding:5px;
-	
-	
-}
-footer p {
-	
-	font-size:14px;
 }
 section h1,h2,h3{
 	font-size:1em;
@@ -91,45 +68,77 @@ section h3{
 	left:60%;
 	top:-25px;
 }
+
+/*Mes site reseau sociau*/
+aside{
+    margin:-1680px 0px 0px 0px;
+	float:right;
+	width:15%;
+	height:250px;
+	background-color:#d7e1ec;
+	text-align:center;
+	font-style:hervana;
+}
+aside p{
+	text-align:left;
+}
+aside a{
+	text-decoration:none;
+	color:black;
+	text-align:left;
+}
+
+/*bas en-tête*/
+footer {
+	
+	position:absolute;
+	top:200%;
+    bottom:0;
+	height:10%;
+	width:99%;
+	padding:5px;
+
+	
+}
+footer p {
+	
+	font-size:14px;
+}
+
+/*photo*/
 .photo{
 	height:110px;
 	position:absolute;
 	left:30%;
 	top:230px;
-}	
+}
+
+/*tableau*/	
 tr{
 	word-spacing:5px;
-	text-align:center;	
 }
 td{
-	word-spacing:0px;
-	text-align:center;
+	word-spacing:0px;	
 }
 hr{
 	border: 1px solid grey;
 	position:relative;
 	top:25px;
 }
-.p {
-	margin:60px 150px ;
-    border: medium solid #6495ed;
-    border-collapse: collapse;
-    width: 40%;
-}
-.p td,th {
+
+ td,th {
    border: thin solid white;
    width: 15%;
+   text-align:center;
 }
 h1{
 	position:relative;
 	left:1%;
 }
 
-
-li{
-	font-size:1.4em;
-	margin:0px 10px;
-	
+td li{
+	font-size:0.8em;
+	margin:0px 10px;	
 }
 .gris {
 	background-color: #A5E7B7;
@@ -143,12 +152,8 @@ li{
 .border {
 	border-bottom: 1px solid grey;
 }
-aside a{
-	text-decoration:none;
-	color:black;
-	text-align:left;
-}
 
+/*Animation reseau sociaux*/	
 .wrapper .button{
  
   height: 50px;
@@ -217,4 +222,12 @@ aside a{
 }
 .wrapper .button:nth-child(5) span{
   color: #ff0000;
+}
+	
+
+/*Liste "langue et loisir "*/	
+li {
+	font-size:1em;
+	position:relative;
+	left:2%;
 }
