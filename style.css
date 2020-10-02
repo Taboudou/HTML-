@@ -8,7 +8,6 @@ body {
 header{
 	
 	border: 2px solid #2874a6;
-	margin: 0px 0px 0px 0px;
     background-color:#2874a6;
     
 }
@@ -30,6 +29,7 @@ nav a{
 	position:relative;
 	left:35%;
 	text-decoration:none;
+	font-weight:bold;
 }
 
 /*Prenom Nom adresse etc*/
@@ -37,8 +37,8 @@ section{
 	margin:50px 20px 20px 30px;
     border: 0px solid grey;
 	padding:20px;
-	width:40%;
-    background-color:aliceblue;
+	width:60%;
+    background-color:#6E95A6;
 	
 }
 section p {
@@ -59,19 +59,19 @@ section h1{
 }
 section h2{
 	position:relative;
-	left:25%;
+	left:15%;
 	top:10px;
 	
 }
 section h3{
 	position:relative;
-	left:60%;
+	left:35%;
 	top:-25px;
 }
 
 /*Mes site reseau sociau*/
 aside{
-    margin:-1680px 0px 0px 0px;
+    margin:-1700px 0px 0px 0px;
 	float:right;
 	width:15%;
 	height:250px;
@@ -91,12 +91,11 @@ aside a{
 /*bas en-tête*/
 footer {
 	
-	position:absolute;
-	top:200%;
-    bottom:0;
+
+    
 	height:10%;
-	width:99%;
-	padding:5px;
+	width:95%;
+
 
 	
 }
@@ -107,9 +106,9 @@ footer p {
 
 /*photo*/
 .photo{
-	height:110px;
+	height:130px;
 	position:absolute;
-	left:30%;
+	left:40%;
 	top:230px;
 }
 
@@ -118,33 +117,23 @@ tr{
 	word-spacing:5px;
 }
 td{
-	word-spacing:0px;	
+	word-spacing:0px;
+	
 }
-hr{
-	border: 1px solid grey;
-	position:relative;
-	top:25px;
-}
-
- td,th {
-   border: thin solid white;
-   width: 15%;
-   text-align:center;
-}
-h1{
-	position:relative;
-	left:1%;
-}
-
 td li{
 	font-size:0.8em;
 	margin:0px 10px;	
 }
 .gris {
-	background-color: #A5E7B7;
+	background-color: #F89E52;
+	font-weight:bold;
 }
 .grey{
-	background-color:grey;
+	background-color:#F89E52;
+	
+}
+.bold {
+	font-weight:bold;
 }
 .taille{
     margin:35px 280px ;
@@ -152,6 +141,24 @@ td li{
 .border {
 	border-bottom: 1px solid grey;
 }
+ td,th {
+   border: thin solid white;
+   width: 15%;
+   text-align:center;
+}
+/*trait */	
+hr{
+	border: 1px solid grey;
+	position:relative;
+	top:25px;
+}
+
+/*Titre des tableau */
+h1{
+	position:relative;
+	left:1%;
+}
+
 
 /*Animation reseau sociaux*/	
 .wrapper .button{
@@ -179,7 +186,7 @@ td li{
   transition: all 0.3s ease-out;
 }
 .wrapper .button:nth-child(1):hover .icon{
-  background: #4267B2;
+  background: #F7E52B;
 }
 .wrapper .button:nth-child(2):hover .icon{
   background: #1DA1F2;
@@ -209,7 +216,7 @@ td li{
   transition: all 0.3s ease-out;
 }
 .wrapper .button:nth-child(1) span{
-  color: #4267B2;
+  color: black;
 }
 .wrapper .button:nth-child(2) span{
   color: #1DA1F2;
@@ -242,5 +249,39 @@ li {
 	width:15px;
 }
 ::-webkit-scrollbar-thumb{
-	background:red;
+	background:grey;
+}
+/*Mise en page */
+.container{
+	margin:auto;
+	width:95vw;
+	height:95vh;
+	grid-gap:0px;
+	grid-template:
+	"hd hd" minmax(7vh,7vh)
+	"nv nv" minmax(7vh, 7vh)
+	"sc as" minmax(80vh, auto)
+	"ft ft" minmax(auto, auto);
+	grid-template colums: 20vw 74vw;
+	grid-template-rows: 7vh 7vh auto auto;
+}
+.container header{
+	grid-area:hd;
+	
+}
+.container nav {
+	grid-area: nv;
+	
+}
+.container aside{
+	grid-area: as;
+	
+}
+.container section {
+	grid-area: sc;
+	
+}
+.container footer{
+	grid-area: ft;
+	
 }
